@@ -1,0 +1,157 @@
+
+.root-children {
+  background-color: honeydew;
+}
+
+.navbar {
+
+  letter-spacing: 3px;
+  border: 0;
+  margin-bottom: 0 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0;
+  font-size: 15px;
+  font-family: "Times New Roman";
+  background-color: black;
+}
+
+.navbar-default {
+  background-color: #272323;
+  border-color: #272323;
+}
+
+.navbar-nav li a:hover {
+  color: deepskyblue !important;
+}
+
+.list {
+  float: right;
+  padding: 5px;
+
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.membership {
+  width: 200px;
+  transform: translate(560px, -11px);
+
+}
+
+.text {
+  color: red;
+  font-size: 20px;
+  font-style: normal;
+  text-transform: capitalize;
+  font-family: in-range;
+  text-align: center;
+
+}
+
+.mvBlock {
+  text-align: center;
+}
+
+.copy {
+  font-size: large;
+}
+
+.items {
+  width: 700px;
+  height: 300px;
+}
+
+.button1:hover {
+  background-color: darkcyan;
+  color: black;
+}
+
+#plan-table tbody tr td:nth-child(1) {
+  width: auto !important;
+}
+
+.button1 {
+  background-color: red;
+  color: black;
+  border: 4px solid silver;
+  width: 100px;
+  height: 100px;
+}
+
+. upgrade {
+  width: 500px;
+}
+
+.contact-info {
+
+}
+
+.contact-info h3 {
+  color: white;
+
+}
+
+.scroll {
+  position: fixed;
+  bottom: auto;
+  right: auto;
+  cursor: move;
+  transitionDuration: 0.2s;
+  transitionTimingFunction: linear;
+  transitionDelay: 0s;
+  font-size: 40px;
+  color: antiquewhite;
+
+}
+
+.footer-bottom {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.footer-bottom p.pull-left {
+  padding-top: 6px;
+}
+
+.background {
+  background-color: black;
+  height: 200px;
+
+}
+
+.signin-bg {
+  background-image: url(/public/images/crown.jpg);
+  background-repeat: no-repeat;
+
+}
+
+.signin {
+  height: 500px;
+  width: 800px;
+  color:white;
+
+}
+
+.register-bg {
+  background-image: url(/public/images/thor.jpg);
+  background-repeat: no-repeat;
+  background-size: 1350px 580px;
+
+}
+
+.register {
+  height: 500px;
+  width: 650px;
+  color: white;
+}
+
+.plan_continue_btn {
+
+}
+
+/*# sourceMappingURL=styles.css.map*/
