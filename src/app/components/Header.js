@@ -94,7 +94,7 @@ export class Header extends React.Component {
                                 <li className={this.state.signInLink}><Link to={"/login"}><strong>Login</strong></Link>
                                 </li>
                                 <li className={this.state.signInLink}><Link
-                                    to={"/register"}><strong>Registration</strong></Link></li>
+                                    to={"/plan"}><strong>Membership</strong></Link></li>
                                 <li className={this.state.signOutLink}><Link
                                     to={"/userhome"}><strong>Profile</strong></Link></li>
                                 <li className={this.state.signOutLink}><Link to="/" onClick={this.signout}><strong>Signout</strong></Link></li>

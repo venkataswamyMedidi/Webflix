@@ -38,7 +38,6 @@ export class Plan extends React.Component {
         return (
             <div className="container-fluid ">
                 <div className="row col-md-offset-2">
-
                     <div className="row">
                         <h3>STEP 1 of 2</h3>
                         <h3>Choose a plan that's right for you</h3>

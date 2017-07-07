@@ -73,7 +73,7 @@ export class Home extends React.Component {
                     </div>
                     &nbsp;
                     <div className="row membership">
-                        <Link to="/register" className="btn btn-primary btn-block">Start Your Membership</Link>
+                        <Link to="/plan" className="btn btn-primary btn-block">Start Your Membership</Link>
 
                     </div>
                 </div>

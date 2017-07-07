@@ -78,7 +78,7 @@ export class Registerdetails extends React.Component {
             <div className="container-fluid register-bg"><br/>
                 {/*<div className="row"><img src={picture} width="1344px" height="550px"/></div>*/}
                 <div className="row register col-md-offset-3">
-                    <Link to="/plan">SELECT PLAN</Link>
+
                    <br/>
                     <div className="col-xs-10 form-group">
                         <h3><b>Register To Your Account</b></h3><br/>

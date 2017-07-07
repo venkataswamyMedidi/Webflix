@@ -48,7 +48,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 	__webpack_require__(/*! C:\Users\Medidi venkata swamy\Desktop\Netfilx\src/app/index.js */1);
-	__webpack_require__(/*! C:\Users\Medidi venkata swamy\Desktop\Netfilx\src\index.html */549);
+	__webpack_require__(/*! C:\Users\Medidi venkata swamy\Desktop\Netfilx\src\index.html */552);
 	(function webpackMissingModule() { throw new Error("Cannot find module \"C:\\Users\\Medidi venkata swamy\\Desktop\\Netfilx\\dist\""); }());
 	(function webpackMissingModule() { throw new Error("Cannot find module \"/F\""); }());
 	(function webpackMissingModule() { throw new Error("Cannot find module \"/Y\""); }());
@@ -85,7 +85,7 @@
 	
 	var _sign = __webpack_require__(/*! ./components/sign */ 543);
 	
-	var _plan = __webpack_require__(/*! ./components/plan */ 544);
+	var _plan = __webpack_require__(/*! ./components/plan */ 547);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -95,7 +95,7 @@
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(/*! ./stylesheets/scss/sample.scss */ 545);
+	__webpack_require__(/*! ./stylesheets/scss/sample.scss */ 548);
 	
 	var App = function (_React$Component) {
 	    _inherits(App, _React$Component);
@@ -28463,7 +28463,7 @@
 	                        { className: 'row membership' },
 	                        _react2.default.createElement(
 	                            _reactRouter.Link,
-	                            { to: '/register', className: 'btn btn-primary btn-block' },
+	                            { to: '/plan', className: 'btn btn-primary btn-block' },
 	                            'Start Your Membership'
 	                        )
 	                    )
@@ -48948,7 +48948,8 @@
 	
 	        _this.state = {
 	            username: "",
-	            password: ""
+	            password: "",
+	            error: "hide"
 	        };
 	        _this.onClickSubmit = _this.onClickSubmit.bind(_this);
 	        return _this;
@@ -48989,6 +48990,7 @@
 	        value: function onClickSubmitCallBack(result) {
 	
 	            if (result.errorres) {
+	                this.setState({ error: "show" });
 	                console.log("user name and password doesn't exist");
 	            } else {
 	                console.log("token and pname", result.datares.token, result.datares.pname);
@@ -49076,6 +49078,19 @@
 	                                    "button",
 	                                    { type: "submit", className: "btn btn-primary btn-block" },
 	                                    "Login"
+	                                )
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "form-group" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "col-sm-offset-0 col-sm-8" },
+	                                _react2.default.createElement(
+	                                    "b",
+	                                    { className: this.state.error },
+	                                    " username and password does not exist"
 	                                )
 	                            )
 	                        )
@@ -50804,11 +50819,6 @@
 	                _react2.default.createElement(
 	                    "div",
 	                    { className: "row register col-md-offset-3" },
-	                    _react2.default.createElement(
-	                        _reactRouter.Link,
-	                        { to: "/plan" },
-	                        "SELECT PLAN"
-	                    ),
 	                    _react2.default.createElement("br", null),
 	                    _react2.default.createElement(
 	                        "div",
@@ -51123,7 +51133,7 @@
 	                                    _react2.default.createElement(
 	                                        _reactRouter.Link,
 	                                        {
-	                                            to: "/register" },
+	                                            to: "/plan" },
 	                                        _react2.default.createElement(
 	                                            "strong",
 	                                            null,
@@ -52041,6 +52051,8 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouter = __webpack_require__(/*! react-router */ 183);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -52051,6 +52063,10 @@
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * Created by Medidi venkata swamy on 6/21/2017.
 	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                */
 	
+	
+	var Mummy = __webpack_require__(/*! ../videos/Mummy.mp4 */ 544);
+	var Spider = __webpack_require__(/*! ../videos/spider.mp4 */ 545);
+	var John = __webpack_require__(/*! ../videos/john.mp4 */ 546);
 	
 	var Sign = exports.Sign = function (_React$Component) {
 	    _inherits(Sign, _React$Component);
@@ -52068,9 +52084,63 @@
 	                "div",
 	                null,
 	                _react2.default.createElement(
-	                    "h1",
+	                    "strong",
 	                    null,
-	                    "WELCOME TO NETFILX"
+	                    "Added Movies"
+	                ),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "container-fluid" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "row" },
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col-xs-4" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "embed-responsive embed-responsive-16by9" },
+	                                _react2.default.createElement("iframe", { className: "embed-responsive-item",
+	                                    src: Mummy })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col-xs-4" },
+	                            _react2.default.createElement("a", { href: "#", title: "SPIDER MAN" }),
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "embed-responsive embed-responsive-16by9" },
+	                                _react2.default.createElement("iframe", { className: "embed-responsive-item",
+	                                    src: Spider })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            "div",
+	                            { className: "col-xs-4" },
+	                            _react2.default.createElement(
+	                                "div",
+	                                { className: "embed-responsive embed-responsive-16by9" },
+	                                _react2.default.createElement("a", { href: "#", title: "JOHN WICK" }),
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "breaker" },
+	                                    _react2.default.createElement("div", { className: "line" })
+	                                ),
+	                                _react2.default.createElement(
+	                                    "div",
+	                                    { className: "buttonContent" },
+	                                    _react2.default.createElement(
+	                                        "div",
+	                                        { className: "linkArrowContainer" },
+	                                        _react2.default.createElement("div", { className: "iconArrowRight" }),
+	                                        _react2.default.createElement("div", { className: "iconArrowRightTwo" })
+	                                    ),
+	                                    _react2.default.createElement("iframe", { className: "embed-responsive-item", src: John })
+	                                )
+	                            )
+	                        )
+	                    )
 	                )
 	            );
 	        }
@@ -52081,6 +52151,33 @@
 
 /***/ }),
 /* 544 */
+/*!**********************************!*\
+  !*** ./src/app/videos/Mummy.mp4 ***!
+  \**********************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "videos/Mummy.mp4";
+
+/***/ }),
+/* 545 */
+/*!***********************************!*\
+  !*** ./src/app/videos/spider.mp4 ***!
+  \***********************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "videos/spider.mp4";
+
+/***/ }),
+/* 546 */
+/*!*********************************!*\
+  !*** ./src/app/videos/john.mp4 ***!
+  \*********************************/
+/***/ (function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "videos/john.mp4";
+
+/***/ }),
+/* 547 */
 /*!************************************!*\
   !*** ./src/app/components/plan.js ***!
   \************************************/
@@ -52444,7 +52541,7 @@
 	}(_react2.default.Component);
 
 /***/ }),
-/* 545 */
+/* 548 */
 /*!**********************************************!*\
   !*** ./src/app/stylesheets/scss/sample.scss ***!
   \**********************************************/
@@ -52453,10 +52550,10 @@
 	// removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 546 */,
-/* 547 */,
-/* 548 */,
-/* 549 */
+/* 549 */,
+/* 550 */,
+/* 551 */,
+/* 552 */
 /*!************************!*\
   !*** ./src/index.html ***!
   \************************/
