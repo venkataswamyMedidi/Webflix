@@ -1,4 +1,5 @@
 
+
 .root-children {
   background-color: honeydew;
 }
@@ -14,6 +15,10 @@
   font-size: 15px;
   font-family: "Times New Roman";
   background-color: black;
+}
+
+.video-desc:hover{
+
 }
 
 .navbar-default {
@@ -104,7 +109,7 @@
   transitionDuration: 0.2s;
   transitionTimingFunction: linear;
   transitionDelay: 0s;
-  font-size: 40px;
+  font-size: 20px;
   color: antiquewhite;
 
 }
@@ -152,4 +157,87 @@
 
 .plan_continue_btn {
 
+}
+.movieslist .row
+{
+  margin: 10px;
+  padding: 10px;
+}
+
+
+
+
+.video-list-thumbs > div{
+  margin-bottom:12px;
+}
+.video-list-thumbs > div:last-child{}
+.video-list-thumbs > div > a{
+  display:block;
+  position:relative;
+  background-color: #111;
+  color: #fff;
+  padding: 8px;
+  border-radius:3px;
+  transition:all 500ms ease-in-out;
+  border-radius:4px
+}
+.video-list-thumbs > div > a:hover{
+  box-shadow:0 2px 5px rgba(0,0,0,.3);
+  text-decoration:none
+}
+.video-list-thumbs em{
+  bottom: 0;
+  font-size: 14px;
+  height: 33px;
+  margin: 8px 0 0;
+}
+.video-list-thumbs .glyphicon-play-circle{
+  font-size: 60px;
+  opacity: 0.6;
+  position: absolute;
+  right: 39%;
+  top: 31%;
+  text-shadow: 0 1px 3px white;
+  transition:all 500ms ease-in-out;
+}
+.video-list-thumbs > div > a:hover .glyphicon-play-circle{
+  color:#fff;
+  opacity:1;
+  text-shadow:0 1px 3px rgba(0,0,0,.8);
+}
+.video-list-thumbs .duration{
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  left: 12px;
+  line-height: 13px;
+  padding: 2px 3px 1px;
+  position: absolute;
+  top: 12px;
+  transition:all 500ms ease;
+}
+.video-list-thumbs > div > a:hover .duration{
+  background-color:#000;
+}
+@media (min-width:320px) and (max-width: 480px) {
+  .video-list-thumbs .glyphicon-play-circle{
+    font-size: 35px;
+    right: 36%;
+    top: 27%;
+  }
+  .video-list-thumbs em{
+    bottom: 0;
+    font-size: 12px;
+    height: 22px;
+    margin: 8px 0 0;
+  }
+}
+.video-list-thumbs.control{
+  visibility: hidden;
+}
+.movieCasting
+{
+  list-style-type: none;
 }

@@ -30,7 +30,7 @@ export class Footer extends React.Component {
                                     <li><a href="#"> Privacy </a></li>
                                     <li><a href="#"> Jobs </a></li>
                                     <li><a href="#"> Gift cards </a></li>
-                                    <li><a href="#"> Netfilx Original </a></li>
+                                    <li><a href="#"> Webflix Original </a></li>
                                     <li><a href="#"> Media center </a></li>
                                     <li><a href="#"> Tender </a></li>
 
@@ -50,7 +50,7 @@ export class Footer extends React.Component {
                     <br/>
                         <div className="container-fluid ">
                             <div className="row">
-                                <strong className="col-xs-4"> <b style={{color:"red",fontSize:"15px"}}>Copyright © 2017, NETFILX. All rights reserved.</b></strong>
+                                <strong className="col-xs-4"> <b style={{color:"red",fontSize:"15px"}}>Copyright © 2017, WEBFLIX. All rights reserved.</b></strong>
 
                                 <div className="col-xs-4"><a href="https://www.facebook.com/bootsnipp"><i id="social-fb"
                                                                                                           className="fa fa-facebook-square fa-3x social"></i></a>
@@ -73,7 +73,7 @@ export class Footer extends React.Component {
                     </div>
                     <div className="scroll">
                         <ScrollToTop showUnder={200}>
-                            <td><i className="glyphicon glyphicon-menu-up" aria-hidden="true"></i></td>
+                            <td><i className="fa fa-2x fa-arrow-circle-up" aria-hidden="true"></i></td>
                         </ScrollToTop>
                     </div>
 

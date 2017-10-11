@@ -86,7 +86,7 @@ export class Header extends React.Component {
                                 <span className="icon-bar"></span>
 
                             </button>
-                            <span className="navbar-brand"><b style={{color: "red"}}> NETFLIX</b></span>
+                            <span className="navbar-brand"><b style={{color: "red"}}>WEBFLIX</b></span>
                         </div>
                         <div className="collapse navbar-collapse" id="myNavbar">
                             <ul className="nav navbar-nav navbar-right">
@@ -96,7 +96,8 @@ export class Header extends React.Component {
                                 <li className={this.state.signInLink}><Link
                                     to={"/plan"}><strong>Membership</strong></Link></li>
                                 <li className={this.state.signOutLink}><Link
-                                    to={"/userhome"}><strong>Profile</strong></Link></li>
+                                    to={"/userhome"}><strong>Trailers</strong></Link></li>
+                                <li className={this.state.signOutLink}><Link to={"/movies"}><strong>Movies</strong></Link></li>
                                 <li className={this.state.signOutLink}><Link to="/" onClick={this.signout}><strong>Signout</strong></Link></li>
                             </ul>
                         </div>

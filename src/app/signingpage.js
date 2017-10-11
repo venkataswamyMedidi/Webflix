@@ -66,7 +66,6 @@ export class SigninPage extends React.Component {
             location.reload();
             browserHistory.push("/userhome");
             localStorage.setItem("token", result.datares.token);
-            localStorage.setItem("userName", result.datares.userName);
 
 
         }

@@ -69,7 +69,7 @@ export class Home extends React.Component {
                         </div>
                     </div>
                     <div className="row text">
-                        <span>Just clik on and start your free trail-- No commitment, Cancel online anytime.</span>
+                        <span>Just click on and start your free trail-- No commitment, Cancel online anytime.</span>
                     </div>
                     &nbsp;
                     <div className="row membership">
