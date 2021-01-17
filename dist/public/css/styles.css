@@ -1,11 +1,12 @@
-
-
 .root-children {
-  background-color: honeydew;
+  background-color: rgb(244, 248, 244);
 }
 
+.img {
+  height: min-content;
+  width: fit-content;
+}
 .navbar {
-
   letter-spacing: 3px;
   border: 0;
   margin-bottom: 0 !important;
@@ -17,8 +18,7 @@
   background-color: black;
 }
 
-.video-desc:hover{
-
+.video-desc:hover {
 }
 
 .navbar-default {
@@ -33,7 +33,6 @@
 .list {
   float: right;
   padding: 5px;
-
 }
 
 .slideshow-container {
@@ -45,7 +44,6 @@
 .membership {
   width: 200px;
   transform: translate(560px, -11px);
-
 }
 
 .text {
@@ -55,7 +53,6 @@
   text-transform: capitalize;
   font-family: in-range;
   text-align: center;
-
 }
 
 .mvBlock {
@@ -93,12 +90,10 @@
 }
 
 .contact-info {
-
 }
 
 .contact-info h3 {
   color: white;
-
 }
 
 .scroll {
@@ -106,12 +101,11 @@
   bottom: auto;
   right: auto;
   cursor: move;
-  transitionDuration: 0.2s;
-  transitionTimingFunction: linear;
-  transitionDelay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
   font-size: 20px;
   color: antiquewhite;
-
 }
 
 .footer-bottom {
@@ -126,27 +120,23 @@
 .background {
   background-color: black;
   height: 200px;
-
 }
 
 .signin-bg {
   background-image: url(/public/images/crown.jpg);
   background-repeat: no-repeat;
-
 }
 
 .signin {
   height: 500px;
   width: 800px;
-  color:white;
-
+  color: white;
 }
 
 .register-bg {
   background-image: url(/public/images/thor.jpg);
   background-repeat: no-repeat;
   background-size: 1350px 580px;
-
 }
 
 .register {
@@ -156,56 +146,52 @@
 }
 
 .plan_continue_btn {
-
 }
-.movieslist .row
-{
+.movieslist .row {
   margin: 10px;
   padding: 10px;
 }
 
-
-
-
-.video-list-thumbs > div{
-  margin-bottom:12px;
+.video-list-thumbs > div {
+  margin-bottom: 12px;
 }
-.video-list-thumbs > div:last-child{}
-.video-list-thumbs > div > a{
-  display:block;
-  position:relative;
+.video-list-thumbs > div:last-child {
+}
+.video-list-thumbs > div > a {
+  display: block;
+  position: relative;
   background-color: #111;
   color: #fff;
   padding: 8px;
-  border-radius:3px;
-  transition:all 500ms ease-in-out;
-  border-radius:4px
+  border-radius: 3px;
+  transition: all 500ms ease-in-out;
+  border-radius: 4px;
 }
-.video-list-thumbs > div > a:hover{
-  box-shadow:0 2px 5px rgba(0,0,0,.3);
-  text-decoration:none
+.video-list-thumbs > div > a:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
-.video-list-thumbs em{
+.video-list-thumbs em {
   bottom: 0;
   font-size: 14px;
   height: 33px;
   margin: 8px 0 0;
 }
-.video-list-thumbs .glyphicon-play-circle{
+.video-list-thumbs .glyphicon-play-circle {
   font-size: 60px;
   opacity: 0.6;
   position: absolute;
   right: 39%;
   top: 31%;
   text-shadow: 0 1px 3px white;
-  transition:all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
 }
-.video-list-thumbs > div > a:hover .glyphicon-play-circle{
-  color:#fff;
-  opacity:1;
-  text-shadow:0 1px 3px rgba(0,0,0,.8);
+.video-list-thumbs > div > a:hover .glyphicon-play-circle {
+  color: #fff;
+  opacity: 1;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
-.video-list-thumbs .duration{
+.video-list-thumbs .duration {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 2px;
   color: #fff;
@@ -216,29 +202,29 @@
   padding: 2px 3px 1px;
   position: absolute;
   top: 12px;
-  transition:all 500ms ease;
+  transition: all 500ms ease;
 }
-.video-list-thumbs > div > a:hover .duration{
-  background-color:#000;
+.video-list-thumbs > div > a:hover .duration {
+  background-color: #000;
 }
-@media (min-width:320px) and (max-width: 480px) {
-  .video-list-thumbs .glyphicon-play-circle{
+@media (min-width: 320px) and (max-width: 480px) {
+  .video-list-thumbs .glyphicon-play-circle {
     font-size: 35px;
     right: 36%;
     top: 27%;
   }
-  .video-list-thumbs em{
+  .video-list-thumbs em {
     bottom: 0;
     font-size: 12px;
     height: 22px;
     margin: 8px 0 0;
   }
 }
-.video-list-thumbs.control{
+.video-list-thumbs.control {
   visibility: hidden;
 }
-.movieCasting
-{
+.movieCasting {
   list-style-type: none;
 }
+
 /*# sourceMappingURL=styles.css.map*/

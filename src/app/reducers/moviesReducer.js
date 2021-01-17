@@ -1,15 +1,15 @@
 /**
- * Created by Medidi venkata swamy on 7/13/2017.
+ * Created by Medidi Venkataswamy on 7/13/2017.
  */
 
-import {FETCH_MOVIES} from '../constants/actionTypes';
+import { FETCH_MOVIES } from '../constants/actionTypes';
 
-const INITIAL_STATE = { movies:[]};
+const INITIAL_STATE = { movies: [] };
 export default function (state = INITIAL_STATE, action) {
-    console.log( "movie reducer", action.payload);
+    console.log("movie reducer", action.payload);
     switch (action.type) {
         case
-        FETCH_MOVIES:
+            FETCH_MOVIES:
             return {
                 ...state, movies: action.payload,
             };
