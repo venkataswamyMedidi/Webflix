@@ -3,7 +3,6 @@
  */
 import React from "react";
 import axios from "axios";
-import { Link } from "react-router";
 import { browserHistory } from "react-router";
 import { isLoggedIn } from "./constants/IsLoggedIn";
 const picture = require("./images/avengers.jpg");

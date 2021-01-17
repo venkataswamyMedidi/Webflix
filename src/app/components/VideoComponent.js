@@ -2,8 +2,8 @@
  * Created by Medidi Venkataswamy on 7/28/2017.
  */
 import React, { PropTypes } from "react";
-
 import videoUrls from "../constants/videoUrls";
+
 var monaImage = require("../images/moanas.jpg");
 
 export class VideoComponent extends React.Component {

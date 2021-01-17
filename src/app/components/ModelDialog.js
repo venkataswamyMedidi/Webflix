@@ -32,7 +32,7 @@ export class ModelDialog extends React.Component {
     });
   };
 
-  /*    renderMovieCasting() {
+  /*  renderMovieCasting() {
      console.log("movieCasting", this.props.dialogText[0]);
      return this.props.dialogText.map((key) => {
      <div>

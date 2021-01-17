@@ -134,4 +134,4 @@ export class SigninPage extends React.Component {
       </div>
     );
   }
-}
+};

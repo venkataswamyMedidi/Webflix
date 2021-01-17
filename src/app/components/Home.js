@@ -67,7 +67,7 @@ export class Home extends React.Component {
                 <strong style={{ color: "orange" }}>THE 100</strong>
               </h4>
               <p>
-                The 100 . The Hundred is an American post-apocalyptic science
+                The 100.The Hundred is an American post-apocalyptic science
                 fiction drama television series that premiered on March 19,
                 2014, on The CW. The series, developed by Jason Rothenberg, is
                 loosely based on a 2013 book of the same name, the first in a
@@ -82,7 +82,7 @@ export class Home extends React.Component {
           </div>
           <div className="row text">
             <span>
-              Just click on and start your free trail-- No commitment, Cancel
+              Just click on and start your free trail -- No commitment, Cancel
               online anytime.
             </span>
           </div>

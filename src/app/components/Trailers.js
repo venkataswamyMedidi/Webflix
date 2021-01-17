@@ -95,7 +95,7 @@ export class Trailers extends React.Component {
                 </div>
                 <em>
                   Into the Badlands:American television series developed by
-                  Alfred Gough Miles Millar
+                    Alfred Gough Miles Millar
                 </em>
                 <span className="glyphicon glyphicon-play-circle"></span>
               </a>

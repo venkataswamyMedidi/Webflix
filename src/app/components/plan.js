@@ -42,7 +42,6 @@ export class Plan extends React.Component {
             <thead>
               <tr>
                 <th style={{ width: "13%" }} />
-
                 <th style={{ width: "13%" }}>
                   <button
                     type="button"

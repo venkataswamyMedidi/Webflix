@@ -28,7 +28,6 @@ export class Footer extends React.Component {
                   </li>
                 </ul>
               </div>
-
               <div className="col-md-4">
                 <h3> Important Links </h3>
                 <ul>

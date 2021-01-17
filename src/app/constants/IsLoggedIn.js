@@ -3,6 +3,7 @@
  */
 
 import { browserHistory } from "react-router";
+
 export const isLoggedIn = () => {
   if (localStorage.getItem("token")) {
     return true;
