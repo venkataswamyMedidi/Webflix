@@ -1,11 +1,8 @@
-import {combineReducers} from 'redux';
-import moviesReducer from './moviesReducer';
-
+import { combineReducers } from "redux";
+import moviesReducer from "./moviesReducer";
 
 const appReducer = combineReducers({
-    netflixMovies: moviesReducer,
-
+  netflixMovies: moviesReducer,
 });
-
 
 export default appReducer;

@@ -11,14 +11,14 @@ var config = {
         filename: "/scripts/bundle.js",
         publicPath: "/public/"
     },
-   /* plugins: [
+    plugins: [
         new ExtractTextPlugin('styles/styles.css', {
             publicPath: '/app/',
             allChunks: true
         })
-    ],*/
+    ],
     module: {
-            loaders: [
+        loaders: [
             {
                 //bundle all the required js files
                 test: /\.js?/,
@@ -27,34 +27,33 @@ var config = {
                 query: {
                     presets: ["react", "es2015", "stage-2"]
                 }
-            }
-            ,
-                {
-                    //extract and compile the css and Sass files
-                    test: /\.s?css$/,
-                    include: SRC_DIR,
-                    loader: ExtractTextPlugin.extract(
-                        ("style-loader", "css-loader")
-                    )
-                },
-                {
-                    test: /\.html$/,
-                    loader: 'html-loader?attrs[]=video:src'
-                },
-                {
+            },
+            {
+                //extract and compile the css and Sass files
+                test: /\.s?css$/,
+                include: SRC_DIR,
+                loader: ExtractTextPlugin.extract(
+                    ("style-loader", "css-loader")
+                )
+            },
+            {
+                test: /\.html$/,
+                loader: 'html-loader?attrs[]=video:src'
+            },
+            {
 
-                     test: /\.mp4$/,
-                     loader: "url-loader?limit=10000&mimetype=video/mp4&name=videos/[name].[ext]"
-                },
-                { 
-					test: /\.(png|jpg)$/, 
-					loader: 'url-loader?limit=10000&name=images/[name].[ext]'
-				}
+                test: /\.mp4$/,
+                loader: "url-loader?limit=10000&mimetype=video/mp4&name=videos/[name].[ext]"
+            },
+            {
+                test: /\.(png|jpg)$/,
+                loader: 'url-loader?limit=10000&name=images/[name].[ext]'
+            }
         ],
 
     },
     // Use the plugin to specify the resulting filename (and add needed behavior to the compiler)
-    plugins : [
+    plugins: [
         new ExtractTextPlugin("css/styles.css")
     ]
 };
