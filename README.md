@@ -10,9 +10,12 @@ WebPackge :Webpack is a build tool that puts all of yours assets,including Js,im
 
 # Installation
 
-1.Clone the Git repository.
+1.Clone the Git repository
+
 2.Install npm dependency #npm install.
+
 3.Start the project #npm start.
+
 4.See the Output on the LocalHost #http://localhost:5051.
 
 #Lincense
