@@ -45,7 +45,7 @@
     "babel-preset-stage-2": "^6.11.0",
     "css-loader": "^6.7.3",
     "extract-text-webpack-plugin": "^3.0.2",
-    "nodemon": "^1.12.1",
+    "nodemon": "^2.0.21",
     "postcss-loader": "^7.0.2",
     "sass-loader": "^13.2.0",
     "toolbox-loader": "0.0.3",
