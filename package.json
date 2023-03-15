@@ -49,7 +49,7 @@
     "postcss-loader": "^7.0.2",
     "sass-loader": "^13.2.0",
     "toolbox-loader": "0.0.3",
-    "webpack": "^5.75.0",
+    "webpack": "^5.76.0",
     "webpack-dev-server": "^3.1.11"
   }
 }
